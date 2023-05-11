@@ -1,4 +1,4 @@
 # tinder_autolike
 Auto Like Tinder Infinite 
-Use extension
+<p>Use extension<p>
 https://chrome.google.com/webstore/detail/scripty-javascript-inject/milkbiaeapddfnpenedfgbfdacpbcbam
