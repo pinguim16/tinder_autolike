@@ -26,8 +26,10 @@ const testSleep = async () => {
 		const nbButtons = document.getElementsByClassName("button").length;
 		const buttons = document.getElementsByClassName("button");
 		const like = nbButtons === 5 ? buttons[3] : buttons[2];
-		like.click();
-		console.log("clicou");
+		if(like){
+      		like.click();
+			console.log("clicou");
+        }
     }
 
     console.log("The loop is finished :)");
