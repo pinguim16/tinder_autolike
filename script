@@ -1,0 +1,36 @@
+const sleep = async (milliseconds) => {
+    await new Promise(resolve => {
+        return setTimeout(resolve, milliseconds)
+    });
+};
+
+const testSleep = async () => {
+    for (let i = 0; i < 10000; i++) {
+        await sleep(5000);
+        console.log(i);
+		const infoClassName = 'focus-button-style';
+
+      	const buttonsClose = document.getElementsByClassName("C($c-ds-icon-secondary)");
+      	if(buttonsClose.length > 2){
+          console.log("close match");
+          buttonsClose[1].click()
+        }
+      
+        const buttonsClose2= document.getElementsByClassName("button Lts($ls-s)");
+      	if(buttonsClose2.length > 5){
+          console.log("close money");  
+          buttonsClose2[6].click()
+        }
+      
+      
+		const nbButtons = document.getElementsByClassName("button").length;
+		const buttons = document.getElementsByClassName("button");
+		const like = nbButtons === 5 ? buttons[3] : buttons[2];
+		like.click();
+		console.log("clicou");
+    }
+
+    console.log("The loop is finished :)");
+}
+
+testSleep();
